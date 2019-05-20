@@ -1,0 +1,5 @@
+.idea/
+.bin/
+venv/include/__pycache__/automatedsearch.cpython-37.pyc
+venv/include/__pycache__/testscrapping.cpython-37.pyc
+venv/include/geckodriver.log
