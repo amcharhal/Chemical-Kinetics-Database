@@ -2,6 +2,8 @@ import unittest
 from automatedsearch import AutomatedSearch
 import urllib.request as ur
 from bs4 import BeautifulSoup
+import pandas as pd
+from pandas.util.testing import assert_frame_equal
 
 
 class TestScrapping(unittest.TestCase):
@@ -19,6 +21,12 @@ class TestScrapping(unittest.TestCase):
         # initialize a runner, pass it your suite and run it
         runner = unittest.TextTestRunner(verbosity=3)
         runner.run(suite)
+    def test_search(self):
+        self.react_name = "(CH3)3COOho"
+        self.automated_search = AutomatedSearch(self.website, self.react_name)
+        expected = pd.DataFrame({"reactants": [("CH(OCH3)3", "·F"), ("CH(OCH3)3", "·OH")], "products": [("Trimethoxymethane", "radical", "HF"), ("Trimethoxymethane", "radical", "H2O")], "rate_reaction": ["8.314472", "8.314472"]})
+        results = self.automated_search.search()
+        assert_frame_equal(expected, results)
 
     def test_search_length(self):
         size = len(self.automated_search.search())
