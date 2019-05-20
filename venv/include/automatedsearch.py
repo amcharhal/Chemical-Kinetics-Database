@@ -27,11 +27,11 @@ class AutomatedSearch:
         for page in reactions_html:
             data_map = self.html_navigate(page)
             data = data.append(data_map, ignore_index=True)
-
         return data
 
     @staticmethod
     def html_navigate(html_page):
+        logging.info("entring from html_navigate")
         data_map = {"reactants": None, "products": None, "rate_reaction": None}
         for element in html_page.find_all('b'):
             if element.a:
@@ -39,11 +39,8 @@ class AutomatedSearch:
                 index = reaction_equation.index('→')
                 reactants = tuple(element for element in reaction_equation[0:index] if element != '+')
                 products = tuple(element for element in reaction_equation[index+1::] if element != '+')
-        try:
-            data_map["reactants"] = reactants
-            data_map["products"] = products
-        except Exception as e:
-            logging.error(e)
+                data_map["reactants"] = reactants
+                data_map["products"] = products
 
         for line in html_page.stripped_strings:
             if 'R =' in line:
@@ -55,7 +52,7 @@ class AutomatedSearch:
 
     @staticmethod
     def send_key(link, react_name):
-        logging.info("entreing send key")
+        logging.info("entering send key")
         try:
             browser = webdriver.Firefox(executable_path="./geckodriver")
             browser.get(link)
@@ -86,5 +83,5 @@ class AutomatedSearch:
             html_page = ur.urlopen(element)
             soup = BeautifulSoup(html_page, 'html.parser')
             reactions_html.append(soup)
-            logging.info("out from html_parse")
+        logging.info("out from html_parse")
         return reactions_html
