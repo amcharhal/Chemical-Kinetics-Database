@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="004e0f90-9536-4b84-bfde-d399ff81b3aa" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/venv/include/geckodriver.log" beforeDir="false" afterPath="$PROJECT_DIR$/venv/include/geckodriver.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/include/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/include/main.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,8 +42,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/venv/include/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="17" column="36" lean-forward="true" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
+            <state relative-caret-position="209">
+              <caret line="15" column="15" lean-forward="true" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
               <folding>
                 <element signature="e#0#43#0" expanded="true" />
               </folding>
@@ -79,7 +79,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="70" />
     <option name="y" value="187" />
     <option name="width" value="1159" />
@@ -270,11 +270,11 @@
     <list>
       <item itemvalue="Python.Unnamed" />
       <item itemvalue="Python.main" />
+      <item itemvalue="Python tests.Unittests for testscrapping.TestScrapping.test_html_navigate" />
+      <item itemvalue="Python tests.Unittests for testscrapping.TestScrapping.test_html_parse" />
+      <item itemvalue="Python tests.Unittests for testscrapping.TestScrapping.test_parsed_html" />
       <item itemvalue="Python tests.Unittests for testscrapping.TestScrapping.test_send_key_match" />
       <item itemvalue="Python tests.Unittests for testscrapping.TestScrapping.test_send_key_not_match" />
-      <item itemvalue="Python tests.Unittests for testscrapping.TestScrapping.test_parsed_html" />
-      <item itemvalue="Python tests.Unittests for testscrapping.TestScrapping.test_html_parse" />
-      <item itemvalue="Python tests.Unittests for testscrapping.TestScrapping.test_html_navigate" />
     </list>
     <recent_temporary>
       <list>
@@ -389,8 +389,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/venv/include/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="17" column="36" lean-forward="true" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
+        <state relative-caret-position="209">
+          <caret line="15" column="15" lean-forward="true" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
           <folding>
             <element signature="e#0#43#0" expanded="true" />
           </folding>

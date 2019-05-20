@@ -1,6 +1,5 @@
 from automatedsearch import AutomatedSearch
 from  testscrapping import  TestScrapping
-
 import logging
 logging.getLogger().setLevel(logging.INFO)
 
@@ -14,6 +13,4 @@ if __name__ == '__main__':
     automated_search = AutomatedSearch(website, react_name)
     tests = TestScrapping()
     tests.run_tests()
-
-    data = automated_search.search()
     print(data)
